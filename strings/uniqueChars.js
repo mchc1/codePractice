@@ -2,7 +2,7 @@ import { validateStringInput } from '../utils.js';
 // Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 
 // if able to use additional data structure
-function allUniqueChars1(str1) {
+export function allUniqueChars1(str1) {
     if (!validateStringInput(str1)) return false;
 
     const seen = new Set();
@@ -17,7 +17,7 @@ function allUniqueChars1(str1) {
 }
 
 // if not able to use additional data structure - O(n^2)
-function allUniqueChars2(str2) {
+export function allUniqueChars2(str2) {
     if (!validateStringInput(str2)) return false;
 
     for (let i = 0; i < str2.length; i++) {
@@ -31,7 +31,7 @@ function allUniqueChars2(str2) {
 }
 
 // if not able to use additional data structure but can use sort - O(n long n)
-function allUniqueChars3(str3) {
+export function allUniqueChars3(str3) {
     if (!validateStringInput(str3)) return false;
 
     const charArray = str3.split('');
