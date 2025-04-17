@@ -1,4 +1,4 @@
-import { validateStringInput } from './utils.js';
+import { validateStringInput } from '../utils.js';
 // Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 
 // if able to use additional data structure
@@ -30,7 +30,7 @@ function allUniqueChars2(str2) {
     return true;
 }
 
-// if not able to use additional data structure - O(n long n)
+// if not able to use additional data structure but can use sort - O(n long n)
 function allUniqueChars3(str3) {
     if (!validateStringInput(str3)) return false;
 
